@@ -1,7 +1,6 @@
 appnope==0.1.4
 asgiref==3.7.2
 asttokens==2.4.1
-cffi @ file:///private/tmp/cffi-20231211-40239-j25k6o/cffi-1.16.0
 click==8.1.7
 comm==0.2.2
 contourpy==1.1.0
