@@ -1,17 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics
-from .models import EmploymentAuthorization, Address, Employee
-from .serializers import EmploymentAuthorizationSerializer, AddressSerializer, EmployeeSerializer
-
-
-class AddressView(generics.RetrieveAPIView):
-    queryset = Address
-    serialzer_class = AddressSerializer
-
-
-class EmployeeAuthorizationView(generics.RetrieveAPIView):
-    queryset = EmploymentAuthorization.objects.all()
-    serializer_class = EmploymentAuthorizationSerializer
+from .models import Employee
+from .serializers import EmployeeSerializer
 
 
 class EmployeeView(generics.RetrieveAPIView):
